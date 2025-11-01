@@ -1,0 +1,75 @@
+/* Center the form */
+.register-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  position: relative;
+  z-index: 3;
+}
+
+/* Glass card */
+.register-form {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+  padding: 40px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #f0f;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Input styles */
+.register-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f0f;
+  font-family: "Orbitron", sans-serif;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.register-form input:focus {
+  box-shadow: 0 0 10px #f0f;
+}
+
+/* Neon button */
+.register-form button {
+  padding: 12px;
+  background: transparent;
+  border: 2px solid #f0f;
+  border-radius: 8px;
+  color: #f0f;
+  font-weight: bold;
+  font-family: "Orbitron", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #f0f, 0 0 20px #f0f inset;
+}
+
+.register-form button:hover {
+  background: #f0f;
+  color: #000;
+  box-shadow: 0 0 20px #f0f, 0 0 40px #f0f;
+}
+
+/* Neon login link */
+.login-link {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}

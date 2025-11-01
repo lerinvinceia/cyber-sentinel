@@ -1,0 +1,75 @@
+/* Center the login container */
+.login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  position: relative;
+  z-index: 3; /* Above bg/fg layers */
+}
+
+/* Glassmorphism form */
+.login-form {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  padding: 40px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #0ff; /* neon cyan text */
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Input fields */
+.login-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #0ff;
+  font-family: "Orbitron", sans-serif;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+  box-shadow: 0 0 10px #0ff;
+}
+
+/* Neon glowing button */
+.login-form button {
+  padding: 12px;
+  background: transparent;
+  border: 2px solid #0ff;
+  border-radius: 8px;
+  color: #0ff;
+  font-weight: bold;
+  font-family: "Orbitron", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+}
+
+.login-form button:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+
+/* Neon link */
+.register-link {
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}

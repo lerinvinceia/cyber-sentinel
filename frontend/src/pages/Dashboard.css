@@ -1,0 +1,124 @@
+.dashboard-container {
+  padding: 2rem;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.centered {
+  align-self: center;
+  text-align: center;
+}
+
+.cyberpunk-heading {
+  font-size: 2rem;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+   margin-left: -70px;
+}
+
+.cyberpunk-subtext {
+  color: #ff00ff;
+  font-size: 1rem;
+  text-shadow: 0 0 3px #ff00ff;
+  margin-left: -70px;
+}
+
+.projects-section {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.cyberpunk-subheading {
+  font-size: 1.5rem;
+  color: #39ff14;
+  text-shadow: 0 0 5px #39ff14;
+  margin-bottom: 2.0rem;
+  margin-top: -1.0rem; /* Move it a bit upward */
+  margin-left: -65px;
+}
+
+
+/* Scrollable container */
+.horizontal-scroll {
+  display: flex;
+  flex-direction: row;
+  max-width: 55%;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0.5rem;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar (optional) */
+.horizontal-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background-color: #39ff14;
+  border-radius: 3px;
+}
+
+.project-card {
+  flex: 0 0 200px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid #888;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px #00ffff;
+  color: #fff;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+  user-select: none;
+}
+
+.project-card.add-card {
+  border: 2px dashed #ff00ff;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #ff00ff;
+  background: transparent;
+  margin-top: -1rem;     
+  margin-bottom: -15rem; 
+  align-self: flex-start; 
+  margin-left: -60px;
+  margin-right: 20px; 
+  
+}
+
+.project-card button {
+  margin-top: 0.5rem;
+  background: transparent;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.project-card button:hover {
+  background-color: #00ffff;
+  color: black;
+}
+
+/* Alternating themes */
+.project-card.blue {
+  box-shadow: 0 0 12px #00ffff;
+}
+
+.project-card.pink {
+  box-shadow: 0 0 12px #ff00ff;
+}

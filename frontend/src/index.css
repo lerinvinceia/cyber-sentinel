@@ -1,0 +1,84 @@
+body,
+html,
+.scene {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000; /* fallback background */
+}
+
+/* === BACKGROUND LAYER === */
+.bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../public/background.png");
+  background-size: cover;
+  
+  z-index: 1;
+}
+
+/* === FOREGROUND LAYER === */
+.fg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 55%;
+  width: 10vw;
+  height: 70vh;
+ 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* === CONTENT === */
+.content {
+  position: relative;
+  z-index: 3;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === CARD === */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 50px;
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  color: white;
+  width: 300px;
+  text-align: center;
+}
+
+/* === INPUT + BUTTON === */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px;
+  background: #5a5aff;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+.glass-navbar {
+  position: sticky;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px; /* Even horizontal padding */
+  background: rgba(20, 20, 40, 0.6);
+  border-bottom: 2px solid rgba(255, 0, 255, 0.3);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+.nav-logo {
+  font-size: 1.8rem;
+  color: #f0f;
+  text-shadow: 0 0 10px #f0f, 0 0 20px #0ff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #0ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f0f;
+  text-shadow: 0 0 8px #f0f;
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  gap: 22px;
+  color: #0ff;
+}
+
+.logout-button {
+  padding: 8px 14px;
+  background: transparent;
+  border: 2px solid #f0f;
+  border-radius: 8px;
+  color: #f0f;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #f0f, 0 0 20px #f0f inset;
+  /* Removed margin-right that caused overflow */
+}
+
+.logout-button:hover {
+  background: #f0f;
+  color: #000;
+  box-shadow: 0 0 20px #f0f, 0 0 40px #f0f;
+}
+
+/* Optional: prevent horizontal scroll if anything still overflows */
+body {
+  overflow-x: hidden;
+}
